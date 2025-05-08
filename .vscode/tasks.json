@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "1. Build and run hello-ai",
+      "label": "1. Run hello-ai",
       "type": "shell",
       "command": "dotnet",
       "args": [
@@ -13,6 +13,25 @@
       "group": {
         "kind": "build",
         "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "2. Run semantickernel-plugins",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "semantickernel-plugins/semantickernel-plugins.csproj"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
       },
       "presentation": {
         "reveal": "always",
