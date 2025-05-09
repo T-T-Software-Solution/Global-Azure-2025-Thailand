@@ -15,7 +15,7 @@ builder.Services.Configure<AzureOpenAIOptions>(builder.Configuration.GetSection(
 
 // Configure Serilog to write logs to console and file
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
+    .MinimumLevel.Verbose()
     .WriteTo.Console() 
     .WriteTo.File(
         path: "Logs/log-.txt",
@@ -74,6 +74,9 @@ builder.Services.AddSwaggerGen(c =>
 
 // Setup Serilog to log to console and file
 builder.Host.UseSerilog();
+
+// Add services to the container.
+builder.Services.AddScoped<ITHChatCompletionService, THChatCompletionService>();
 
 var app = builder.Build();
 
