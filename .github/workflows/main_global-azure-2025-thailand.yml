@@ -31,7 +31,8 @@ jobs:
       with:
         push: true
         tags: globalazure2025thailand.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_240b2791c8f64dfa95694ecafffc1698 }}/semantickernel-plugins:${{ github.sha }}
-        file: ./Dockerfile
+        context: ./semantickernel-plugins
+        file: ./semantickernel-plugins/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
