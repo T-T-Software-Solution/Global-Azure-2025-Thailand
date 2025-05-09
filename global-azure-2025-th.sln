@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hello-ai", "hello-ai\hello-ai.csproj", "{EAA39D4F-BC4D-44D8-9052-98AA0337F845}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semantickernel-plugins", "semantickernel-plugins\semantickernel-plugins.csproj", "{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{EAA39D4F-BC4D-44D8-9052-98AA0337F845}.Release|x64.Build.0 = Release|Any CPU
 		{EAA39D4F-BC4D-44D8-9052-98AA0337F845}.Release|x86.ActiveCfg = Release|Any CPU
 		{EAA39D4F-BC4D-44D8-9052-98AA0337F845}.Release|x86.Build.0 = Release|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Debug|x64.Build.0 = Debug|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Debug|x86.Build.0 = Debug|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Release|x64.ActiveCfg = Release|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Release|x64.Build.0 = Release|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{C8194AD0-FAE5-4EA4-89BB-67E265BB25B9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

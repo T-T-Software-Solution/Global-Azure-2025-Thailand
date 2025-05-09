@@ -38,6 +38,15 @@
         "panel": "dedicated"
       },
       "problemMatcher": "$msCompile"
-    }
+    },
+    {
+      "label": "3. Run Docker Compose Up",
+      "type": "shell",
+      "command": "docker compose up --build",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/docker"
+      }
+    },
   ]
 }
