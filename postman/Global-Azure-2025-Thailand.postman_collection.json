@@ -234,6 +234,43 @@
 			"response": []
 		},
 		{
+			"name": "4. Chat - Hello World- ดูสถานะไฟ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"แสดงสถานะไฟในบ้าน\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/Chat/message",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"Chat",
+						"message"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'POST' \\\n  'http://localhost:5155/Chat/message' \\\n  -H 'accept: */*' \\\n  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZ2xvYmFsYXp1cmUyMDI1dGhhZG1pbiIsImV4cCI6MTc0Njc4Njc3NX0.KQ93czEgxtua_YNippYC_4dXV3vkIgGWgs8dTS8_PSU' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n  \"question\": \"ท้องฟ้าสีอะไร\"\n}'"
+			},
+			"response": []
+		},
+		{
 			"name": "5. Chat - Semantic Kernel - ดูสถานะไฟ",
 			"request": {
 				"method": "POST",
@@ -287,6 +324,80 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\n  \"question\": \"เปิดไฟระย้า เสร็จแล้วแสดงสถานะไฟในบ้าน\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/Chat/semantickernelplugin",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"Chat",
+						"semantickernelplugin"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'POST' \\\n  'http://localhost:5155/Chat/message' \\\n  -H 'accept: */*' \\\n  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZ2xvYmFsYXp1cmUyMDI1dGhhZG1pbiIsImV4cCI6MTc0Njc4Njc3NX0.KQ93czEgxtua_YNippYC_4dXV3vkIgGWgs8dTS8_PSU' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n  \"question\": \"ท้องฟ้าสีอะไร\"\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "5. Chat - Semantic Kernel - Hello World",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"ท้องฟ้าสีอะไร\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/Chat/semantickernelplugin",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"Chat",
+						"semantickernelplugin"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'POST' \\\n  'http://localhost:5155/Chat/message' \\\n  -H 'accept: */*' \\\n  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZ2xvYmFsYXp1cmUyMDI1dGhhZG1pbiIsImV4cCI6MTc0Njc4Njc3NX0.KQ93czEgxtua_YNippYC_4dXV3vkIgGWgs8dTS8_PSU' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n  \"question\": \"ท้องฟ้าสีอะไร\"\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "5. Chat - Semantic Kernel - อากาศ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"สภาพอากาศในกรุงเทพวันนี้เป็นยังไง\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
