@@ -1,5 +1,8 @@
 # Global Azure 2025 Thailand - hello-ai Console App
 
+# Video
+https://youtu.be/XYgSv0jdPNs?si=nsUkcNI_6YSW8pat
+
 ## Presentation
 https://www.canva.com/design/DAGm2aWHfDc/t1Tp0LhSV9IgpOfnpigL8g/view?utm_content=DAGm2aWHfDc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3a72081fbd
 
