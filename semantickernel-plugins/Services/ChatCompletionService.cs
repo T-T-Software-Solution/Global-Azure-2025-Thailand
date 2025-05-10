@@ -66,8 +66,9 @@ Sorry, I am unable to provide an answer at the moment. Please try again later.";
         // Build the kernel
         semanticKernel = kernelBuilder.Build();
 
-                // Add the lights plugin to the kernel
+        // Add the lights plugin to the kernel
         semanticKernel.Plugins.AddFromType<LightsPlugin>("Lights");
+        semanticKernel.Plugins.AddFromType<WeatherForecastPlugin>("WeatherForecast");
 
         // Get the chat completion service from the kernel
         semanticKernelPlugInService = semanticKernel.GetRequiredService<IChatCompletionService>();
@@ -230,6 +231,33 @@ Sorry, I am unable to provide an answer at the moment. Please try again later.";
             return light;
         }
     }
+
+    private class WeatherForecastPlugin
+    {
+        private readonly HttpClient _httpClient = new();
+        private const string ApiUrlTemplate = "https://wttr.in/{0}?format=j1";
+
+        [KernelFunction("get_weather_forecast")]
+        [Description("Gets the 3-day weather forecast for a specified city using the global free wttr.in API.")]
+        [return: Description("A string containing the weather forecast summary for the city.")]
+        public async Task<string> GetWeatherForecastAsync([Description("City name in English")] string city)
+        {
+            try
+            {
+                var url = string.Format(ApiUrlTemplate, Uri.EscapeDataString(city));
+                var response = await _httpClient.GetAsync(url);
+                response.EnsureSuccessStatusCode();
+                var json = await response.Content.ReadAsStringAsync();
+                // Optionally, parse and summarize the JSON here
+                return json;
+            }
+            catch (Exception ex)
+            {
+                return $"Error fetching weather forecast: {ex.Message}";
+            }
+        }
+    }
+
     private class LightModel
     {
         [JsonPropertyName("id")]
